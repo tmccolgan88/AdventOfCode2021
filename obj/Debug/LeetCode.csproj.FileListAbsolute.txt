@@ -5,3 +5,10 @@ C:\Users\movil\source\repos\LeetCode\LeetCode\obj\Debug\LeetCode.csproj.Assembly
 C:\Users\movil\source\repos\LeetCode\LeetCode\obj\Debug\LeetCode.csproj.CoreCompileInputs.cache
 C:\Users\movil\source\repos\LeetCode\LeetCode\obj\Debug\LeetCode.exe
 C:\Users\movil\source\repos\LeetCode\LeetCode\obj\Debug\LeetCode.pdb
+C:\Users\movil\Source\Repos\AdventOfCode2021\bin\Debug\LeetCode.exe.config
+C:\Users\movil\Source\Repos\AdventOfCode2021\bin\Debug\LeetCode.exe
+C:\Users\movil\Source\Repos\AdventOfCode2021\bin\Debug\LeetCode.pdb
+C:\Users\movil\Source\Repos\AdventOfCode2021\obj\Debug\LeetCode.csprojAssemblyReference.cache
+C:\Users\movil\Source\Repos\AdventOfCode2021\obj\Debug\LeetCode.csproj.CoreCompileInputs.cache
+C:\Users\movil\Source\Repos\AdventOfCode2021\obj\Debug\LeetCode.exe
+C:\Users\movil\Source\Repos\AdventOfCode2021\obj\Debug\LeetCode.pdb

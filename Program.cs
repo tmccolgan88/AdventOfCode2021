@@ -12,7 +12,7 @@ namespace LeetCode
         {
             AdventOfCode aoc = new AdventOfCode();
 
-            aoc.Day1B();
+            aoc.Day2B();
 
         }
     }
