@@ -148,9 +148,100 @@ namespace LeetCode
          * 
          * **********************/
 
+        /************************
+         * 
+         * 
+         *      DAY 3
+         *      
+         * 
+         * **********************/
+
+        public void Day3A()
+        {
+            string[] input = ReadProblemInput("Problem3AInput");
+
+            int bitLength = input[0].Length;
+            int[] counts = new int[bitLength];
+            char[] bits = new char[bitLength];
+
+            string bitString = "";
+            for (int i = 0; i < input.Length; i++)
+            {
+                bits = input[i].ToCharArray();
+
+                for (int j = 0; j < bitLength; j++)
+                {
+                    counts[j] += int.Parse(bits[j].ToString());
+                }
+            }
+
+            for (int i = 0; i < counts.Length; i++)
+            {
+                if (counts[i] > (input.Length / 2))
+                    bits[i] = '1';
+                else
+                    bits[i] = '0';
+            }
+
+            bitString = new string(bits);
+
+
+            Debug.WriteLine(Convert.ToInt32(bitString, 2) * (Convert.ToInt32(bitString, 2) ^ 0b111111111111));
+        }//Day3A
+
+        public void Day3B()
+        {
+            List<string> oneList = new List<string>();
+            List<string> zeroList = new List<string>();
+            List<string> tempList = new List<string>();
+            List<List<string>> o2Master = new List<List<string>>();
+            List<List<string>> co2Master = new List<List<string>>();
+
+            string[] input = ReadProblemInput("Problem3AInput");
+            tempList = input.ToList<string>();
+
+            int bitLength = input[0].Length;
+
+            string bitString = "";
+
+            for (int i = 0; i < bitLength; i++)
+            {
+                foreach (string str in tempList)
+                {
+                    if (str[0].CompareTo('1') >= 0)
+                        oneList.Add(str);
+                    else
+                        zeroList.Add(str);
+                }
+
+                
+                if (oneList.Count > zeroList.Count)
+                {
+                    foreach (string str in oneList)
+                        tempList.Remove(str);
+                }
+                else
+                {
+                    foreach (string str in zeroList)
+                        tempList.Remove(str);
+                }
+
+            }
+
+            foreach (string str in tempList)
+                Debug.WriteLine(str);
+        }
+
+        /************************
+         * 
+         * 
+         *      DAY 3
+         *      
+         * 
+         * **********************/
         private string[] ReadProblemInput(string txtFileName)
         {
-            string[] lines = System.IO.File.ReadAllLines(@"C:\Users\movil\source\repos\AdventOfCode2021\AOCInput\" + txtFileName + ".txt");
+            string[] lines = System.IO.File.ReadAllLines(@"C:\Users\movil\source\repos\LeetCode\LeetCode\AOCInput\" + txtFileName + ".txt");
 
             if (lines != null)
                 return lines;
